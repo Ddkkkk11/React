@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三个API</title>
+    <!--    引入react库-->
+    <script src="script/react.development.js"></script>
+    <!-- 引入react的dom库 -->
+    <script src="script/react-dom.development.js"></script>
+</head>
+<body>
+    <div id="root">
+
+    </div>
+    <script >
+
+
+/*
+*
+*
+React.createElement();
+    --用来操作React元素
+        参数名称
+            1.元素的名称(html标签必须小写)
+            2.标签中的属性
+            * class属性需要设置为className
+*               在设置时间时，属性名需要修改为驼峰命名法
+*           3.元素的内容(子元素)
+*
+*
+* */
+<!--            创建一个React元素-->
+    const button=React.createElement('button',{
+      className:'btn',
+      id:'myBtn',
+      type:'button',
+      onClick:()=>{
+        alert('123')
+      }
+    },'HelloWorld');
+    const div=React.createElement('div',{
+      id:'div'
+    },button)
+
+
+    //创建根元素
+    const root=ReactDOM.createRoot(document.getElementById('root'));
+    root.render(div);
+
+
+
+    </script>
+</body>
+</html>
