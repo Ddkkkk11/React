@@ -65,3 +65,5 @@
     function f2():never {
         throw new Error('报错了');
     }
+
+      
