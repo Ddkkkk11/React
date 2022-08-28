@@ -1,6 +1,5 @@
-###
-  webpack相关配置
-  //引入一个包
+//webpack配置
+//引入一个包 
 const path = require('path');
 //引入html文件
 const HtmlWebpackPlugin = require('html-webpack-plugin');
