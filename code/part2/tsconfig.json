@@ -25,5 +25,11 @@
     //用来指定编译后的文件放的位置
     //    "outFile": ""表示可以将代码合并为一个文件 设置ourfile后所有的全局作用域中的代码会合并到同一文件中
 //    "outFile": "./dist/app.js"
+    "allowJs": true,
+    //是否对js文件进行编译
+    "checkJs": false,//是否检查我们的js语法
+    "removeComments": false,//是否移除注释
+    "noEmit": false,//不生成我们编译后的文件
+    "noEmitOnError": true,//当有错误的时候不生成编译文件
   }
 }
