@@ -1,0 +1,13 @@
+// export const hi='hello';
+console.log(1);
+console.log(2);
+console.log(123);
+console.log(213);
+console.log(123123);
+let a = 10;
+console.log(a);
+// import { hi } from "./app";
+// console.log(hi);
+let b = 20;
+let c = 'hello';
+console.log(b);
