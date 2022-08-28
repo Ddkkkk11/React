@@ -20,12 +20,6 @@ class Person {
     }
     //定义方法
     sayHello() {
-
-        /*
-        * 如果方法以static开头 就是类方法  否则是实例方法
-      *
-        *
-        * */
         console.log('hello');
     }
 }
