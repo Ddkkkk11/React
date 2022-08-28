@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _m1__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./m1 */ \"./src/m1.ts\");\n\r\nfunction sum(a, b) {\r\n    return a + b;\r\n}\r\nconsole.log(sum(111, 2));\r\nconsole.log(_m1__WEBPACK_IMPORTED_MODULE_0__.hi);\r\n\n\n//# sourceURL=webpack://part3/./src/index.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _m1__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./m1 */ \"./src/m1.ts\");\n\n\nfunction sum(a, b) {\n  return a + b;\n}\n\nconsole.log(sum(111, 2));\nconsole.log(_m1__WEBPACK_IMPORTED_MODULE_0__.hi);\nconst obj = {\n  name: 'xdd',\n  age: 20\n};\nconst b = 123123;\nconsole.log(b);\nconsole.log(obj.name, obj.age);\nconsole.log('asdasdasdads');\nconsole.log('asdasdasdads');\nconsole.log('asdasdasdads');\nconsole.log('asdasdasdads');\nconsole.log('asdasdasdads');\nconsole.log('asdasdasdads');\nconsole.log(Promise);\n\n//# sourceURL=webpack://part3/./src/index.ts?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _m1_
   \*******************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"hi\": () => (/* binding */ hi)\n/* harmony export */ });\nconst hi = 'hello';\r\n\n\n//# sourceURL=webpack://part3/./src/m1.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"hi\": () => (/* binding */ hi)\n/* harmony export */ });\nconst hi = 'hello';\nconsole.log(123123);\nconsole.log(123123);\nconsole.log(123123);\nconsole.log(123123345435345);\n\n//# sourceURL=webpack://part3/./src/m1.ts?");
 
 /***/ })
 
