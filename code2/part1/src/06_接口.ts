@@ -26,14 +26,33 @@
 
     /*
     * 接口可以在定义类的时候去限制类的结构
-    *
+    *   接口中的所有属性都不能有实际的值
+    *   接口只定义我们定义对象的结构，而不考虑实际的值
+    *           在接口中所有的方法都是抽象方法
     * */
     interface myInter {
-        name: 'xdd',
+        name: string,
 
         sayHello(): void
     }
 
+    /*
+    * 定义类的时候可以使类去实现一个接口
+    *       实现接口就是使类满足接口的要求
+    *
+    *
+    * */
+    class MyClass implements myInter {
+        name: string;
+        constructor(name:string) {
+            this.name=name;
+        }
+        sayHello(): void {
+            console.log('大家好')
+        }
+    }
+    const clas=new MyClass('xdd');
+    console.log('MyClass的name',clas);
     const obj: myInterface = {
         name: 'xdd',
         age: 21,
