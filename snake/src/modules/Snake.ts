@@ -25,7 +25,7 @@ class Snake{
          this.head.style.left = value+'px';
     }
     set Y(value){
-        this.head.style.top = value+'';
+         this.head.style.top = value+'px';
     }
     //add蛇的长度
         addLength(){
