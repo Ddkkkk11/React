@@ -1,5 +1,6 @@
 //定义表示记分牌的类
 class  ScorePanel{
+
     // 用来技术分数和等级
     score=0;
     level=1;
