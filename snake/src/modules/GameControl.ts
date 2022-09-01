@@ -23,10 +23,13 @@ class GameControl{
         init(){
             //绑定键盘按键按下事件
             document.addEventListener('keydown',this.keyupHandler.bind(this));
+            //一开始初始化 init函数会调用一次 给dom添加监听 run函数执行 当键盘按下 dom监听回调会执行一次 这时候direction有值 在因为有了定时器
+            // run方法会一直调用
             this.run();
         }
         //创建一个键盘按下的响应函数
       keyupHandler(e:KeyboardEvent){
+          console.log('键盘按下了')
             /*
             * ArrowU     ArrowLef    ArrowRigh   ArrowDown
             *赋值之前检查event.key是否合法(是否按到正确的按键)
@@ -72,6 +75,7 @@ class GameControl{
             // console.log(X)
             this.snake.Y = Y;
             this.isLive && setTimeout(this.run.bind(this),300-(this.scorePanel.level-1)*30);
+           // setTimeout(this.run.bind(this),3000-(this.scorePanel.level-1)*30);
         }
 }
 export  default GameControl;
