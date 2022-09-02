@@ -9,6 +9,7 @@
     <script src="script/react-dom.development.js"></script>
 </head>
 <body>
+<button id="btn">我是一个按钮</button>
     <div id="root">
 
     </div>
@@ -24,9 +25,11 @@ React.createElement();
             1.元素的名称(html标签必须小写)
             2.标签中的属性
             * class属性需要设置为className
-*               在设置时间时，属性名需要修改为驼峰命名法
+*               在设置事件时，属性名需要修改为驼峰命名法
 *           3.元素的内容(子元素)
-*
+*   注意点
+*           React元素最终回从虚拟DOM转换为真是DOM
+*           React元素一旦创建就无法修改，只能通过新创建的元素进行替换
 *
 * */
 <!--            创建一个React元素-->
@@ -40,14 +43,25 @@ React.createElement();
     },'HelloWorld');
     const div=React.createElement('div',{
       id:'div'
-    },button)
+    },'我是一个div',button)
 
 
     //创建根元素
     const root=ReactDOM.createRoot(document.getElementById('root'));
     root.render(div);
-
-
+    const btn=document.getElementById("btn");
+        btn.addEventListener('click',()=>{
+          //点击按钮后修改div中button的文字为click me
+          const button=React.createElement('button',{
+            className:'btn',
+            type:'button',
+            onClick:()=>{
+              alert('123')
+            }
+          },'click me ');
+          //修改元素后必须对根元素重新进行渲染
+          ReactDOM.createRoot(document.getElementById('root')).render(button);
+        })
 
     </script>
 </body>
