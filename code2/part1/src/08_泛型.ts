@@ -30,13 +30,12 @@ function f1<T extends Inter>(a: T): number {
     return a.length;
 }
 
-// <T extends Inner>表示泛型必须是Inter必须是Inter的实现类(子类 )
+// <T extends Inner>表示泛型必须是Inter必须是Inter的实现类(子类)
 f1('asdzxcxzcccccccccccc');
 f1({length: 10});
 
 class Myclass<T> {
     name: T;
-
     constructor(name: T) {
         this.name = name;
     }
